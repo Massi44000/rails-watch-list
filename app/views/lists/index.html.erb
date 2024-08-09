@@ -4,6 +4,13 @@
       <li>
         <%= link_to list.name, list_path(list) %>
       </li>
+<%= cl_image_tag("zbbmzsq9fvmkrbtvwmj7",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("quk4prqer6jnbmlhfkbc",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
     <% end %>
     <hr>
       <%= link_to 'add list', new_list_path %>
+
